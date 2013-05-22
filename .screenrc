@@ -1,0 +1,49 @@
+# no welcome message
+startup_message off
+
+# force reload of ~/.*profile
+shell -$SHELL
+
+# Enable scrollbar
+#termcapinfo xterm       ti@:te@
+#termcapinfo xterm-color ti@:te@
+
+# barra azul e amarelo, com hora, data e janelas
+msgwait 3
+# sorendition 05 43
+# hardstatus alwayslastline "%Y:%m:%d %c | %w"
+hardstatus alwayslastline
+hardstatus string "%{= kG}%{w}[ %{g}hansolo %{w}]  [ %{= kw}%?%-Lw%?%{r}|%{c}%n %f%t%?(%u)%?%{r}|%{w}%?%+Lw%?%?%= %{w}]  [%{r}  %d-%m-%Y %{y}%c:%s %{w}]"
+caption splitonly "-- %2n %t --"
+
+# to shift+(page up|page down) work
+bind h hardstatus ignore
+bind g hardstatus alwyslastline
+
+defscrollback 5000
+termcapinfo xterm* ti@:te@
+termcapinfo xterm-color ti@:te@
+termcapinfo xterm-256color ti@:te@
+
+# mapeamento para fazer redimensionamento de janelas divididas
+# com o Split.
+bind "R" wrap
+bind "r" resize
+bind "+" resize +5
+bind "-" resize -5
+
+# segurança: desligar algumas teclas perigosas
+bind k
+bind ^k
+bind z
+bind ^z
+bind x
+
+# para colar no vim sem "identar"
+# ATENÇÃO: é ^a^] 
+register [ "\033:set paste a"
+register ] "\033:set nopaste a"
+bind ^] paste [.]
+
+# Arduino
+# bindkey ^C kill
