@@ -3,6 +3,8 @@
 /.pow*
 /.rvmrc
 /.rbenv-version
+/.bash_history
+/.cache
 /bin/
 /.tags*
 Thumbs.db
