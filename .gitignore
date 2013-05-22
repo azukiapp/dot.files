@@ -5,6 +5,7 @@
 /.rbenv-version
 /.bash_history
 /.cache
+/.ssh
 /bin/
 /.tags*
 Thumbs.db
