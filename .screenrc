@@ -13,7 +13,7 @@ msgwait 3
 # sorendition 05 43
 # hardstatus alwayslastline "%Y:%m:%d %c | %w"
 hardstatus alwayslastline
-hardstatus string "%{= kG}%{w}[ %{g}hansolo %{w}]  [ %{= kw}%?%-Lw%?%{r}|%{c}%n %f%t%?(%u)%?%{r}|%{w}%?%+Lw%?%?%= %{w}]  [%{r}  %d-%m-%Y %{y}%c:%s %{w}]"
+hardstatus string "%{= kG}%{w}[ %{g}%H %{w}]  [ %{= kw}%?%-Lw%?%{r}|%{c}%n %f%t%?(%u)%?%{r}|%{w}%?%+Lw%?%?%= %{w}]  [%{r}  %d-%m-%Y %{y}%c:%s %{w}]"
 caption splitonly "-- %2n %t --"
 
 # to shift+(page up|page down) work

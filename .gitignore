@@ -4,6 +4,8 @@
 /.rvmrc
 /.rbenv-version
 /.bash_history
+/.pry_history
+/.viminfo
 /.cache
 /.ssh
 /bin/
